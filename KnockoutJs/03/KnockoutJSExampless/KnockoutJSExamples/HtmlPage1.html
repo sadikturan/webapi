@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/knockout-3.4.2.js"></script>
+</head>
+<body>
+
+
+    Ad  <input type="text"  data-bind="value:ad"/>
+    Soyad <input type="text"  data-bind="value:soyad"/>
+    <span data-bind="html:adsoyad()">
+
+    </span>
+
+
+    <ul>
+        <!--ko foreach: hobi-->
+            <li data-bind="text:$data"></li>
+        <!--/ko-->
+    </ul>
+
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Resim</th>
+                <th>Başlık</th>
+                <th>Aciklama</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach:kurslar">
+            <tr>
+                <td>
+                    <img data-bind="attr:{src:Resim}"/>
+                </td>
+                <td data-bind="text:baslik"></td>
+                <td data-bind="text:Aciklama"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+
+        var model = function () {
+            var self = this;
+
+            self.ad = 'Sadık';
+            self.soyad = 'TURAN';
+            self.cinsiyet = 'erkek';
+            self.yas = 33;
+            self.hobi = ['sinema', 'müzik', 'kitap okumak'];
+            self.kurslar = [
+                 {
+                     baslik: 'Web Tasarım Eğitimi : Html5,Css ve Bootstrap',
+                     Aciklama: 'Bootstrap, Html5 ve CSS',
+                     Resim: 'http://www.edurive.com/Upload/Course/ragy4ufa.jpg?w=300&h=200&mode=crop'
+                 },
+                 {
+                     baslik: 'Web Programlama Eğitimi : Asp.Net MVC',
+                     Aciklama: 'Bootstrap, Html5 ve CSS',
+                     Resim: 'http://www.edurive.com/Upload/Course/ragy4ufa.jpg?w=300&h=200&mode=crop'
+                 },
+                 {
+                     baslik: 'Web Programlama Eğitimi : Asp.Net WebForm',
+                     Aciklama: 'Bootstrap, Html5 ve CSS',
+                     Resim: 'http://www.edurive.com/Upload/Course/ragy4ufa.jpg?w=300&h=200&mode=crop'
+                 },
+            ];
+            self.adsoyad = function () {
+                return "<b>"+this.ad + ' ' + this.soyad+"</b>";
+            };
+            self.hobileriGoster = function () {
+                return this.hobi[0] + ' ' + this.hobi[1] + ' ' + this.hobi[2];
+            };
+
+        };
+
+        ko.applyBindings(model);
+
+    </script>
+</body>
+</html>
