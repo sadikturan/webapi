@@ -25,6 +25,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.WebUI", "D:\Videol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Entity", "D:\Videolar\Udemy\Asp.Net Web Api  Single Page Application\Bölüm 4-Store App\4-Entity Sınıfları\StoreApp\StoreApp.Entity\StoreApp.Entity.csproj", "{8E9B71A7-EAAD-49FF-B3A6-C474F69BD3D1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-Abstract Repository", "05-Abstract Repository", "{617BE6AA-2D82-4A85-8FF7-61F1074FC521}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Data", "D:\Videolar\Udemy\Asp.Net Web Api  Single Page Application\Bölüm 4-Store App\5-Abstract Repository\StoreApp\StoreApp.Data\StoreApp.Data.csproj", "{EC1D3CA7-6A77-4A4F-8FD8-6514B4242446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Service", "D:\Videolar\Udemy\Asp.Net Web Api  Single Page Application\Bölüm 4-Store App\5-Abstract Repository\StoreApp\StoreApp.Service\StoreApp.Service.csproj", "{56003440-87BF-486A-A2A1-09E4186B093D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.WebUI", "D:\Videolar\Udemy\Asp.Net Web Api  Single Page Application\Bölüm 4-Store App\5-Abstract Repository\StoreApp\StoreApp.WebUI\StoreApp.WebUI.csproj", "{1DD4803F-1EE2-46D3-869D-33E1F6AE71D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Entity", "D:\Videolar\Udemy\Asp.Net Web Api  Single Page Application\Bölüm 4-Store App\5-Abstract Repository\StoreApp\StoreApp.Entity\StoreApp.Entity.csproj", "{B78C903A-E447-4653-8687-0F465305510C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +73,22 @@ Global
 		{8E9B71A7-EAAD-49FF-B3A6-C474F69BD3D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E9B71A7-EAAD-49FF-B3A6-C474F69BD3D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E9B71A7-EAAD-49FF-B3A6-C474F69BD3D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1D3CA7-6A77-4A4F-8FD8-6514B4242446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1D3CA7-6A77-4A4F-8FD8-6514B4242446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1D3CA7-6A77-4A4F-8FD8-6514B4242446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1D3CA7-6A77-4A4F-8FD8-6514B4242446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56003440-87BF-486A-A2A1-09E4186B093D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56003440-87BF-486A-A2A1-09E4186B093D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56003440-87BF-486A-A2A1-09E4186B093D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56003440-87BF-486A-A2A1-09E4186B093D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD4803F-1EE2-46D3-869D-33E1F6AE71D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD4803F-1EE2-46D3-869D-33E1F6AE71D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD4803F-1EE2-46D3-869D-33E1F6AE71D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD4803F-1EE2-46D3-869D-33E1F6AE71D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B78C903A-E447-4653-8687-0F465305510C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78C903A-E447-4653-8687-0F465305510C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78C903A-E447-4653-8687-0F465305510C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78C903A-E447-4653-8687-0F465305510C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,5 +104,10 @@ Global
 		{84741959-F7E2-41DA-9DE8-13B67AB27219} = {B960A86D-4A0B-45FF-A08F-BDD0A67F72B0}
 		{CDA98597-102A-4AC4-A5F1-C62E0B322457} = {B960A86D-4A0B-45FF-A08F-BDD0A67F72B0}
 		{8E9B71A7-EAAD-49FF-B3A6-C474F69BD3D1} = {B960A86D-4A0B-45FF-A08F-BDD0A67F72B0}
+		{617BE6AA-2D82-4A85-8FF7-61F1074FC521} = {C310FA56-78C7-46C8-8A78-CDAFE5E8E876}
+		{EC1D3CA7-6A77-4A4F-8FD8-6514B4242446} = {617BE6AA-2D82-4A85-8FF7-61F1074FC521}
+		{56003440-87BF-486A-A2A1-09E4186B093D} = {617BE6AA-2D82-4A85-8FF7-61F1074FC521}
+		{1DD4803F-1EE2-46D3-869D-33E1F6AE71D5} = {617BE6AA-2D82-4A85-8FF7-61F1074FC521}
+		{B78C903A-E447-4653-8687-0F465305510C} = {617BE6AA-2D82-4A85-8FF7-61F1074FC521}
 	EndGlobalSection
 EndGlobal
