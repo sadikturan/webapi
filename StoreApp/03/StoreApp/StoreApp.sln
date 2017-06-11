@@ -3,17 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StoreApp Uygulaması", "StoreApp Uygulaması", "{C310FA56-78C7-46C8-8A78-CDAFE5E8E876}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Data", "StoreApp.Data\StoreApp.Data.csproj", "{06563A50-D881-4323-924E-D15F882A944E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Proje Katmanlarının Oluşturulması", "03-Proje Katmanlarının Oluşturulması", "{E2A5DF09-6924-4EBD-8E9D-34C6C4134B43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Service", "StoreApp.Service\StoreApp.Service.csproj", "{83EB5FB0-8CC2-40D2-860F-55BC49B4904B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Data", "StoreApp\03\StoreApp\StoreApp.Data\StoreApp.Data.csproj", "{06563A50-D881-4323-924E-D15F882A944E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.WebUI", "StoreApp.WebUI\StoreApp.WebUI.csproj", "{AAF5972B-A5AE-4465-9B07-4AD4C1C643AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Service", "StoreApp\03\StoreApp\StoreApp.Service\StoreApp.Service.csproj", "{83EB5FB0-8CC2-40D2-860F-55BC49B4904B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.WebUI", "StoreApp\03\StoreApp\StoreApp.WebUI\StoreApp.WebUI.csproj", "{AAF5972B-A5AE-4465-9B07-4AD4C1C643AD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Entity", "StoreApp\03\StoreApp\StoreApp.Entity\StoreApp.Entity.csproj", "{33587256-8E27-45D8-834C-3DB3D4E0D0B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Entity", "StoreApp.Entity\StoreApp.Entity.csproj", "{33587256-8E27-45D8-834C-3DB3D4E0D0B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,12 +36,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{E2A5DF09-6924-4EBD-8E9D-34C6C4134B43} = {C310FA56-78C7-46C8-8A78-CDAFE5E8E876}
-		{06563A50-D881-4323-924E-D15F882A944E} = {E2A5DF09-6924-4EBD-8E9D-34C6C4134B43}
-		{83EB5FB0-8CC2-40D2-860F-55BC49B4904B} = {E2A5DF09-6924-4EBD-8E9D-34C6C4134B43}
-		{AAF5972B-A5AE-4465-9B07-4AD4C1C643AD} = {E2A5DF09-6924-4EBD-8E9D-34C6C4134B43}
-		{33587256-8E27-45D8-834C-3DB3D4E0D0B2} = {E2A5DF09-6924-4EBD-8E9D-34C6C4134B43}
 	EndGlobalSection
 EndGlobal
