@@ -15,6 +15,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.WebUI", "StoreApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Entity", "StoreApp\03\StoreApp\StoreApp.Entity\StoreApp.Entity.csproj", "{33587256-8E27-45D8-834C-3DB3D4E0D0B2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Entity Sınıfları", "04-Entity Sınıfları", "{B960A86D-4A0B-45FF-A08F-BDD0A67F72B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Data", "D:\Videolar\Udemy\Asp.Net Web Api  Single Page Application\Bölüm 4-Store App\4-Entity Sınıfları\StoreApp\StoreApp.Data\StoreApp.Data.csproj", "{AC7B4BB0-1D15-4FA7-8EAD-83D613EB1FD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Service", "D:\Videolar\Udemy\Asp.Net Web Api  Single Page Application\Bölüm 4-Store App\4-Entity Sınıfları\StoreApp\StoreApp.Service\StoreApp.Service.csproj", "{84741959-F7E2-41DA-9DE8-13B67AB27219}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.WebUI", "D:\Videolar\Udemy\Asp.Net Web Api  Single Page Application\Bölüm 4-Store App\4-Entity Sınıfları\StoreApp\StoreApp.WebUI\StoreApp.WebUI.csproj", "{CDA98597-102A-4AC4-A5F1-C62E0B322457}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Entity", "D:\Videolar\Udemy\Asp.Net Web Api  Single Page Application\Bölüm 4-Store App\4-Entity Sınıfları\StoreApp\StoreApp.Entity\StoreApp.Entity.csproj", "{8E9B71A7-EAAD-49FF-B3A6-C474F69BD3D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +47,22 @@ Global
 		{33587256-8E27-45D8-834C-3DB3D4E0D0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33587256-8E27-45D8-834C-3DB3D4E0D0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33587256-8E27-45D8-834C-3DB3D4E0D0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC7B4BB0-1D15-4FA7-8EAD-83D613EB1FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC7B4BB0-1D15-4FA7-8EAD-83D613EB1FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC7B4BB0-1D15-4FA7-8EAD-83D613EB1FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC7B4BB0-1D15-4FA7-8EAD-83D613EB1FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84741959-F7E2-41DA-9DE8-13B67AB27219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84741959-F7E2-41DA-9DE8-13B67AB27219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84741959-F7E2-41DA-9DE8-13B67AB27219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84741959-F7E2-41DA-9DE8-13B67AB27219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA98597-102A-4AC4-A5F1-C62E0B322457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA98597-102A-4AC4-A5F1-C62E0B322457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA98597-102A-4AC4-A5F1-C62E0B322457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA98597-102A-4AC4-A5F1-C62E0B322457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E9B71A7-EAAD-49FF-B3A6-C474F69BD3D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E9B71A7-EAAD-49FF-B3A6-C474F69BD3D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E9B71A7-EAAD-49FF-B3A6-C474F69BD3D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E9B71A7-EAAD-49FF-B3A6-C474F69BD3D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,5 +73,10 @@ Global
 		{83EB5FB0-8CC2-40D2-860F-55BC49B4904B} = {E2A5DF09-6924-4EBD-8E9D-34C6C4134B43}
 		{AAF5972B-A5AE-4465-9B07-4AD4C1C643AD} = {E2A5DF09-6924-4EBD-8E9D-34C6C4134B43}
 		{33587256-8E27-45D8-834C-3DB3D4E0D0B2} = {E2A5DF09-6924-4EBD-8E9D-34C6C4134B43}
+		{B960A86D-4A0B-45FF-A08F-BDD0A67F72B0} = {C310FA56-78C7-46C8-8A78-CDAFE5E8E876}
+		{AC7B4BB0-1D15-4FA7-8EAD-83D613EB1FD0} = {B960A86D-4A0B-45FF-A08F-BDD0A67F72B0}
+		{84741959-F7E2-41DA-9DE8-13B67AB27219} = {B960A86D-4A0B-45FF-A08F-BDD0A67F72B0}
+		{CDA98597-102A-4AC4-A5F1-C62E0B322457} = {B960A86D-4A0B-45FF-A08F-BDD0A67F72B0}
+		{8E9B71A7-EAAD-49FF-B3A6-C474F69BD3D1} = {B960A86D-4A0B-45FF-A08F-BDD0A67F72B0}
 	EndGlobalSection
 EndGlobal
