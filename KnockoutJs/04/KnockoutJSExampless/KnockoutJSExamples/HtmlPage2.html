@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/knockout-3.4.2.js"></script>
+</head>
+<body>
+
+    <span data-bind="text:sayi"></span>
+    <button type="button" data-bind="click:artir">Arttır</button>
+    <button type="button" data-bind="click:azalt">Azalt</button>
+    <button type="button" data-bind="click:reset,visible:Resetlenebilir">Sıfırla</button>
+    <script>
+
+        var Sayac = function () {
+            this.sayi = ko.observable(0);
+
+            this.artir = function () {
+                this.sayi(this.sayi() + 1);
+            }
+
+            this.azalt = function () {
+                this.sayi(this.sayi() - 1);
+            }
+
+            this.reset = function () {
+                this.sayi(0);
+            }
+
+            this.Resetlenebilir = ko.computed(function () {
+                return this.sayi() > 4;
+            }, this);
+
+
+        }
+
+        ko.applyBindings(new Sayac);
+
+    </script>
+</body>
+</html>

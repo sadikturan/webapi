@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/knockout-3.4.2.js"></script>
+</head>
+<body>
+
+    Ad: <input type="text" data-bind="value:ad" />
+    Soyad: <input type="text" data-bind="value:soyad" />
+
+    <span data-bind="text:adsoyad"></span>
+    <script>
+
+        var model = function (_ad, _soyad) {
+            this.ad = ko.observable(_ad);
+            this.soyad = ko.observable(_soyad);
+
+           this.adsoyad = ko.pureComputed(function () {
+                return this.ad() + ' ' + this.soyad();
+           }, this);
+
+        };
+
+        ko.applyBindings(new model("Sadık", "Turan"));
+
+    </script>
+</body>
+</html>
