@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StoreApp Uygulaması", "StoreApp Uygulaması", "{C310FA56-78C7-46C8-8A78-CDAFE5E8E876}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bölüm 4-StoreApp Uygulaması", "Bölüm 4-StoreApp Uygulaması", "{C310FA56-78C7-46C8-8A78-CDAFE5E8E876}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Proje Katmanlarının Oluşturulması", "03-Proje Katmanlarının Oluşturulması", "{E2A5DF09-6924-4EBD-8E9D-34C6C4134B43}"
 EndProject
@@ -98,7 +98,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Service", "StoreAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.WebUI", "StoreApp\11\StoreApp\StoreApp.WebUI\StoreApp.WebUI.csproj", "{1F00392F-67E0-4124-A5DA-895F4D6E7828}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Birthday Uygulaması", "Birthday Uygulaması", "{7751A328-28D8-4F71-8C60-26F35A274140}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bölüm 1-Birthday Uygulaması", "Bölüm 1-Birthday Uygulaması", "{7751A328-28D8-4F71-8C60-26F35A274140}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Postman ile WebApi Testi", "04-Postman ile WebApi Testi", "{E92B327A-B5A9-4B08-AD69-75EBA00FCB60}"
 EndProject
