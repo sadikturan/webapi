@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <img id="ajax-loader"
+             src="ajax-loading.gif" style="display:none;width:100px;" />
+        <hr />
+
+        <div id="results" class="alert alert-success" style="display:none;">
+            <h3>Bilgileriniz kayıt edildi.</h3>
+            <h4>
+                <span id="Gelenler"></span>
+            </h4>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><h4>Sende Davetlisin!</h4></div>
+                    <div class="panel-body">
+
+                        <form id="DavetiyeForm">
+                            <div class="form-group">
+                                <label>Ad :</label>
+                                <input type="text" id="Ad" name="Ad" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label>Eposta :</label>
+                                <input type="text" id="Eposta" name="Eposta" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label>Katılacak mısın ?</label>
+                                <select id="KatilmaDurumu" name="KatilmaDurumu" class="form-control">
+                                    <option>Partiye Katılıyormusun ?</option>
+                                    <option value="true">Evet,Geliyorum</option>
+                                    <option value="false">Hayır,Gelmiyorum.</option>
+                                </select>
+                            </div>
+                            <div class="text-center">
+                                <input class="btn btn-success" type="submit" value="Gönder" />
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function GetKatilanlar() {
+            var html = [];
+
+            $.getJSON("http://localhost:60945/api/Davetiye/GetKatilanlar", function (data) {
+
+                $.each(data, function (key, value) {
+                    html.push("<label class='label label-success'>" + value.Ad + "</label> ");
+                });
+
+                $("#Gelenler").empty().append(html);
+            });
+        }
+
+        $("#DavetiyeForm").submit(function (event) {
+
+            event.preventDefault();
+
+            $.ajax({
+                url: "http://localhost:60945/api/Davetiye/Ekle",
+                type: "POST",
+                data: {
+                    Ad: $("#Ad").val(),
+                    Eposta: $("#Eposta").val(),
+                    KatilmaDurumu: $("#KatilmaDurumu").val()
+                },
+                beforeSend: function () {
+                    $("#ajax-loader").show();
+                },
+                complete: function () {
+                    $("#ajax-loader").hide();
+                },
+                success: function (data) {
+                    if ($("#KatilmaDurumu").val() == "true") {
+                        GetKatilanlar();
+                    }
+
+                    $("#results").show();
+
+                },
+                error: function () {
+                    alert("hata oluştu");
+                }
+            });
+
+
+        });
+
+
+    </script>
+
+</body>
+</html>
