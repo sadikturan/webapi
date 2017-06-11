@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bölüm 4-StoreApp Uygulaması", "Bölüm 4-StoreApp Uygulaması", "{C310FA56-78C7-46C8-8A78-CDAFE5E8E876}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_StoreApp Uygulaması", "4_StoreApp Uygulaması", "{C310FA56-78C7-46C8-8A78-CDAFE5E8E876}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Proje Katmanlarının Oluşturulması", "03-Proje Katmanlarının Oluşturulması", "{E2A5DF09-6924-4EBD-8E9D-34C6C4134B43}"
 EndProject
@@ -98,7 +98,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Service", "StoreAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.WebUI", "StoreApp\11\StoreApp\StoreApp.WebUI\StoreApp.WebUI.csproj", "{1F00392F-67E0-4124-A5DA-895F4D6E7828}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bölüm 1-Birthday Uygulaması", "Bölüm 1-Birthday Uygulaması", "{7751A328-28D8-4F71-8C60-26F35A274140}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Birthday Uygulaması", "1_Birthday Uygulaması", "{7751A328-28D8-4F71-8C60-26F35A274140}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Postman ile WebApi Testi", "04-Postman ile WebApi Testi", "{E92B327A-B5A9-4B08-AD69-75EBA00FCB60}"
 EndProject
@@ -128,7 +128,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthdayApp", "BirthdayApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JQueryApp", "BirthdayApp\12\BirthdayApp\JQueryApp\JQueryApp.csproj", "{CC881FCA-D2F2-41EC-A133-96AE3793F95F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bölüm 2-KnockoutJs", "Bölüm 2-KnockoutJs", "{BA2A90ED-B4C4-4C25-A0BB-E2EFE6D62A4F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_KnockoutJs", "2_KnockoutJs", "{BA2A90ED-B4C4-4C25-A0BB-E2EFE6D62A4F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-ViewModel", "02-ViewModel", "{8097DECB-4BE0-4F80-ABC0-0B0537831DA6}"
 EndProject
@@ -155,6 +155,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnockoutJSExamples", "KnockoutJs\07\KnockoutJSExampless\KnockoutJSExamples\KnockoutJSExamples.csproj", "{AB1DC01C-3EB6-495C-8572-83B18FFD9FC4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08-Posting Form Data", "08-Posting Form Data", "{2F665A55-37FF-47F6-84A5-D3FB0769A5A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12-Data Validation", "12-Data Validation", "{8E41B0E0-FEAC-4B5E-8AA6-6F85B4DD618B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Data", "4-StoreApp\12\StoreApp\StoreApp.Data\StoreApp.Data.csproj", "{306C7328-C94A-41AE-93E3-FE31B15D2596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Entity", "4-StoreApp\12\StoreApp\StoreApp.Entity\StoreApp.Entity.csproj", "{F78C93C2-F37D-4519-B51E-79D00F0633D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.Service", "4-StoreApp\12\StoreApp\StoreApp.Service\StoreApp.Service.csproj", "{DD12C5AA-1258-4955-92C3-63288703B5C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp.WebUI", "4-StoreApp\12\StoreApp\StoreApp.WebUI\StoreApp.WebUI.csproj", "{F6C4104A-23AA-4B04-9957-0D0EDA835578}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -366,6 +376,22 @@ Global
 		{AB1DC01C-3EB6-495C-8572-83B18FFD9FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB1DC01C-3EB6-495C-8572-83B18FFD9FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB1DC01C-3EB6-495C-8572-83B18FFD9FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306C7328-C94A-41AE-93E3-FE31B15D2596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306C7328-C94A-41AE-93E3-FE31B15D2596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306C7328-C94A-41AE-93E3-FE31B15D2596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306C7328-C94A-41AE-93E3-FE31B15D2596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F78C93C2-F37D-4519-B51E-79D00F0633D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F78C93C2-F37D-4519-B51E-79D00F0633D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F78C93C2-F37D-4519-B51E-79D00F0633D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F78C93C2-F37D-4519-B51E-79D00F0633D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD12C5AA-1258-4955-92C3-63288703B5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD12C5AA-1258-4955-92C3-63288703B5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD12C5AA-1258-4955-92C3-63288703B5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD12C5AA-1258-4955-92C3-63288703B5C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C4104A-23AA-4B04-9957-0D0EDA835578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C4104A-23AA-4B04-9957-0D0EDA835578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C4104A-23AA-4B04-9957-0D0EDA835578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C4104A-23AA-4B04-9957-0D0EDA835578}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -443,5 +469,10 @@ Global
 		{A76FB617-B178-40C8-9939-5CEA6C07040A} = {BA2A90ED-B4C4-4C25-A0BB-E2EFE6D62A4F}
 		{AB1DC01C-3EB6-495C-8572-83B18FFD9FC4} = {A76FB617-B178-40C8-9939-5CEA6C07040A}
 		{2F665A55-37FF-47F6-84A5-D3FB0769A5A3} = {BA2A90ED-B4C4-4C25-A0BB-E2EFE6D62A4F}
+		{8E41B0E0-FEAC-4B5E-8AA6-6F85B4DD618B} = {C310FA56-78C7-46C8-8A78-CDAFE5E8E876}
+		{306C7328-C94A-41AE-93E3-FE31B15D2596} = {8E41B0E0-FEAC-4B5E-8AA6-6F85B4DD618B}
+		{F78C93C2-F37D-4519-B51E-79D00F0633D3} = {8E41B0E0-FEAC-4B5E-8AA6-6F85B4DD618B}
+		{DD12C5AA-1258-4955-92C3-63288703B5C3} = {8E41B0E0-FEAC-4B5E-8AA6-6F85B4DD618B}
+		{F6C4104A-23AA-4B04-9957-0D0EDA835578} = {8E41B0E0-FEAC-4B5E-8AA6-6F85B4DD618B}
 	EndGlobalSection
 EndGlobal
