@@ -1,0 +1,44 @@
+﻿@model IEnumerable<StoreApp.Entity.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Products</div>
+
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Id</td>
+                <td>@p.Name</td>
+                <td>@p.Description</td>
+                <td>@p.Price</td>
+            </tr>
+        }
+
+    </table>
+
+</div>
+
+@using (Html.BeginForm("SaveProduct", "Test"))
+{
+    <input type="hidden" name="Name" value="Samsung 7" />
+    <input type="hidden" name="Description" value="Güzel Telefon" />
+    <input type="hidden" name="Price" value="3000" />
+    <input type="hidden" name="CategoryId" value="1" />
+
+    <button class="btn btn-primary" type="submit">Kaydet</button>
+    <a href="/test/deleteproduct/23" class="btn btn-primary">Sil</a>
+}
+
+
