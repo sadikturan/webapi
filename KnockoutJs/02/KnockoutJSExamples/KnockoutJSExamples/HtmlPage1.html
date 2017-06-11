@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="Scripts/knockout-3.4.2.js"></script>
+</head>
+<body>
+
+
+    <script>
+        var model = {
+            ad: 'Sadık',
+            soyad: 'TURAN',
+            cinsiyet: 'erkek',
+            yas: 33,
+            hobi: ['sinema', 'müzik', 'kitap okumak'],
+            adsoyad: function () {
+                return this.ad + ' ' + this.soyad;
+            },
+            hobileriGoster: function () {
+                return this.hobi[0] + ' ' + this.hobi[1] + ' ' + this.hobi[2];
+            }
+        };
+
+        var m1 = new model();
+
+        m1.ad = "Ahmet";
+        m1.hobi[1] = 'kürek çekmek';
+        m1.hobileriGoster();
+
+
+        var model2 = function (ad,soyad,yas) {
+            var self = this;
+
+            self.ad = ad;
+            self.soyad = soyad;
+            self.cinsiyet = 'erkek';
+            self.yas = yas;
+            self.hobi = ['sinema', 'müzik', 'kitap okumak'];
+            self.adsoyad = function () {
+                return self.ad + ' ' + self.soyad;
+            },
+            self.hobileriGoster = function () {
+                return self.hobi[0] + ' ' + self.hobi[1] + ' ' + self.hobi[2];
+            }
+        };
+
+        var m2 = new model2('sadık','turan',33);
+        alert(m2.ad);
+
+        alert(m2.hobileriGoster());
+
+
+    </script>
+</body>
+</html>
