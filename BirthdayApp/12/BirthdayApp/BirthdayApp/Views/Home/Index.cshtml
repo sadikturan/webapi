@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div class="text-center" data-bind="visible:model.view()=='hosgeldin'">
+    <h2>Harika bir doğum günü partisi olacak!</h2>
+    <h3>Sende Davetlisin!</h3>
+    <button class="btn btn-primary" data-bind="click:formuGoster">Davetiye Formu</button>
+</div>
+
+<div class="panel panel-success" data-bind="visible:model.view()=='form'">
+    <div class="panel-heading"><h4>Sende Davetlisin!</h4></div>
+    <div class="panel-body">
+        <form>
+            <div class="form-group">
+                <label>Ad :</label>
+                <input type="text" class="form-control" data-bind="value:model.davetiyeModel.Ad" />
+            </div>
+            <div class="form-group">
+                <label>Eposta :</label>
+                <input type="text" class="form-control" data-bind="value:model.davetiyeModel.Eposta" />
+            </div>
+            <div class="form-group">
+                <label>Katılacak mısın ?</label>
+                <select class="form-control" data-bind="value:model.davetiyeModel.KatilmaDurumu">
+                    <option value="true">Evet,Geleceğim</option>
+                    <option value="false">Hayır,Gelmeyeceğim</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <input class="btn btn-success"value="Gönder" data-bind="click:formuGonder" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div data-bind="visible:model.view()=='thanks'">
+    <h1>Teşekkürler, <span data-bind="text:model.davetiyeModel.Ad"></span></h1>
+    <div class="lead">
+        <span data-bind="visible:model.davetiyeModel.KatilmaDurumu()=='true'">
+            Gelmene Çok Sevindim :) Bütün Hazırlıklar tamamlandı..!
+            <span>
+                Partiye Katılacaklar :
+                <span data-bind="text:model.Katilanlar().join(',')">
+
+                </span>
+            </span>
+        </span>
+        <span data-bind="visible:model.davetiyeModel.KatilmaDurumu()=='false'">
+            Gelemeyecek Olmana Çok Üzüldüm :( Bunu bildirdiğin için Teşekkür Ederim.
+        </span>
+    </div>
+
+</div>
+
+@section Scripts
+{
+
+}
+
