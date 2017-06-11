@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/knockout-3.4.2.js"></script>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="well">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="text" data-bind='value:Eleman,valueUpdate:"afterkeydown"' class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-bind="click:ElemanEkle,enable:Eleman().length>0">Ekle</button>
+                </form>
+                <hr />
+                <select multiple="multiple" data-bind="options:Elemanlar,selectedOptions:SeciliElemanlar" class="form-control"> </select>
+                <hr />
+                <div>
+                    <button class="btn btn-danger" data-bind="click:ElemanSil">Sil</button>
+                    <button class="btn btn-primary" data-bind="click:ElemanlariSirala">Sırala</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var ListeModel = function () {
+
+            this.Eleman = ko.observable("");
+            this.Elemanlar = ko.observableArray(["aListe Elemanı 1", "dListe Elemanı 2", "cListe Elemanı 3", "fListe Elemanı 4"]);
+
+            this.SeciliElemanlar = ko.observableArray(["aListe Elemanı 1", "cListe Elemanı 2"]);
+
+            this.ElemanEkle = function () {
+                if (this.Eleman() != "") {
+                    this.Elemanlar.push(this.Eleman());
+                    this.Eleman("");
+                }
+            }
+
+            this.ElemanSil = function () {
+                this.Elemanlar.removeAll(this.SeciliElemanlar());
+                this.SeciliElemanlar([]);
+            };
+
+            this.ElemanlariSirala = function () {
+                this.Elemanlar.sort();
+            };
+
+        }
+
+        ko.applyBindings(new ListeModel());
+
+    </script>
+</body>
+</html>

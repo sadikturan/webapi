@@ -142,9 +142,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Observable", "04-Observa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnockoutJSExamples", "KnockoutJs\04\KnockoutJSExampless\KnockoutJSExamples\KnockoutJSExamples.csproj", "{A6FD166D-960C-4913-90FE-AC54677AFE86}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-Observable Array", "05-Observable Array", "{464C5A3E-41A8-4AC1-ABBE-3A87592360B7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-Observable Array-1", "05-Observable Array-1", "{464C5A3E-41A8-4AC1-ABBE-3A87592360B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnockoutJSExamples", "KnockoutJs\05\KnockoutJSExampless\KnockoutJSExamples\KnockoutJSExamples.csproj", "{85E13817-4602-42AF-BAFB-0A8E6340FC4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06-Observable Array-2", "06-Observable Array-2", "{0B1D5EA4-9FC4-4521-A73D-FEF9B1DB3A6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnockoutJSExamples", "KnockoutJs\06\KnockoutJSExampless\KnockoutJSExamples\KnockoutJSExamples.csproj", "{670BBF1B-C7E9-4218-B84E-FB83B87ED925}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -348,6 +352,10 @@ Global
 		{85E13817-4602-42AF-BAFB-0A8E6340FC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85E13817-4602-42AF-BAFB-0A8E6340FC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85E13817-4602-42AF-BAFB-0A8E6340FC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670BBF1B-C7E9-4218-B84E-FB83B87ED925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670BBF1B-C7E9-4218-B84E-FB83B87ED925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{670BBF1B-C7E9-4218-B84E-FB83B87ED925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{670BBF1B-C7E9-4218-B84E-FB83B87ED925}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -420,5 +428,7 @@ Global
 		{A6FD166D-960C-4913-90FE-AC54677AFE86} = {01916F0C-8A78-47CD-8C3C-F83F176D9965}
 		{464C5A3E-41A8-4AC1-ABBE-3A87592360B7} = {BA2A90ED-B4C4-4C25-A0BB-E2EFE6D62A4F}
 		{85E13817-4602-42AF-BAFB-0A8E6340FC4A} = {464C5A3E-41A8-4AC1-ABBE-3A87592360B7}
+		{0B1D5EA4-9FC4-4521-A73D-FEF9B1DB3A6C} = {BA2A90ED-B4C4-4C25-A0BB-E2EFE6D62A4F}
+		{670BBF1B-C7E9-4218-B84E-FB83B87ED925} = {0B1D5EA4-9FC4-4521-A73D-FEF9B1DB3A6C}
 	EndGlobalSection
 EndGlobal
