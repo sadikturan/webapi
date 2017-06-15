@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+<script>
+    var testdeleteProduct = function () {
+        deleteProduct(3);
+    }
+
+    var changeProduct = function () {
+        var product = model.products()[1];
+        product.Price = product.Price + 20;
+        saveProduct(product);
+    }
+</script>
+
+<div class="panel panel-danger" data-bind="visible:model.isError(),text:model.error()">
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel heading">Product Controller Metotları</div>
+    <table class="table table-striped">
+        <tr>
+            <td><button class="btn btn-primary" data-bind="click:getProducts">Ürünleri Getir</button></td>
+            <td><button class="btn btn-warning" data-bind="click:changeProduct">Ürün Güncelle</button></td>
+            <td><button class="btn btn-danger" data-bind="click:testdeleteProduct">Ürün Sil</button></td>
+        </tr>
+    </table>
+</div>      
