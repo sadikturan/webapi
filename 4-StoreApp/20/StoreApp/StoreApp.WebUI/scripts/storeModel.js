@@ -1,5 +1,6 @@
 ﻿var model = {
     products: ko.observableArray([]),
+    categories: ko.observableArray([]),
     orders: ko.observableArray([]),
     error: ko.observable(""),
     isError: ko.observable(false)

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StoreApp.Data.Concrete.EntityFramework
 {
-    public class StoreDataInitializer : DropCreateDatabaseIfModelChanges<StoreContext>
+    public class StoreDataInitializer : DropCreateDatabaseAlways<StoreContext>
     {
         protected override void Seed(StoreContext context)
         {
@@ -48,6 +48,18 @@ namespace StoreApp.Data.Concrete.EntityFramework
                 new Product() { Name="Samsung S5", Description="idare eder", Price=800, CategoryId=3},
                 new Product() { Name="Samsung S5", Description="idare eder", Price=800, CategoryId=3}
             }.ForEach(i => context.Products.Add(i));
+
+            context.SaveChanges();
+
+
+            new List<Order>()
+            {
+                new Order() {  UserName="sadikturan", TotalPrice=100},
+                new Order() {  UserName="sadikturan1", TotalPrice=200},
+                new Order() {  UserName="sadikturan2", TotalPrice=300},
+                new Order() {  UserName="sadikturan3", TotalPrice=500}
+
+            }.ForEach(i => context.Orders.Add(i));
 
             context.SaveChanges();
 

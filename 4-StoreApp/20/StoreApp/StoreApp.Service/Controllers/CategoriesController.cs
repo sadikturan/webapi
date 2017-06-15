@@ -35,7 +35,7 @@ namespace StoreApp.Service.Controllers
             await _categoryRepository.SaveCategoryAsync(entity);
         }
 
-        public async Task DeleteProduct(int id)
+        public async Task DeleteCategory(int id)
         {
             await _categoryRepository.DeleteCategoryAsync(id);
         }
