@@ -1,0 +1,15 @@
+﻿<div data-bind="foreach:model.products()">
+
+    <div class="well">
+        <h3>
+            <strong data-bind="text:Name"></strong>
+            <span class="pull-right label label-success" 
+                  data-bind="text:(Price)+' TL'"</span>
+        </h3>
+        <span class="lead" data-bind="text:Description"></span>,
+        <div class="pull-right">
+            <button class="btn btn-primary">Sepete Ekle</button>
+        </div>
+    </div>
+
+</div>

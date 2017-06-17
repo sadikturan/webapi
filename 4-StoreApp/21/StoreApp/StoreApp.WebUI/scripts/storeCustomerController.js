@@ -1,0 +1,4 @@
+﻿$(function () {
+    getCategories();
+    getProducts();
+});

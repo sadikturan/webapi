@@ -1,0 +1,19 @@
+﻿@section Scripts
+{
+    <script src="~/scripts/storeCustomerController.js"></script>
+}
+
+<div class="row">
+    <div class="col-md-3">
+        @Html.Partial("CategoryList")
+    </div>
+
+    <div class="col-md-9">
+
+        <div class="alert alert-danger col-xs-8"
+             data-bind="visible: model.isError(), text: model.error()">
+        </div>
+
+        @Html.Partial("ProductList")
+    </div>
+</div>

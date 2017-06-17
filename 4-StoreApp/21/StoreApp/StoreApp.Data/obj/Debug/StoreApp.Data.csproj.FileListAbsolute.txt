@@ -1,0 +1,12 @@
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\bin\Debug\StoreApp.Data.dll.config
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\bin\Debug\StoreApp.Data.dll
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\bin\Debug\StoreApp.Data.pdb
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\bin\Debug\EntityFramework.dll
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\bin\Debug\StoreApp.Entity.dll
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\bin\Debug\StoreApp.Entity.pdb
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\bin\Debug\EntityFramework.xml
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\obj\Debug\StoreApp.Data.csprojResolveAssemblyReference.cache
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\obj\Debug\StoreApp.Data.dll
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Data\obj\Debug\StoreApp.Data.pdb

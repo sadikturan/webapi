@@ -1,0 +1,5 @@
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Entity\bin\Debug\StoreApp.Entity.dll
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Entity\bin\Debug\StoreApp.Entity.pdb
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Entity\obj\Debug\StoreApp.Entity.csprojResolveAssemblyReference.cache
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Entity\obj\Debug\StoreApp.Entity.dll
+C:\Users\sadikturan\Source\Repos\webapi\4-StoreApp\21\StoreApp\StoreApp.Entity\obj\Debug\StoreApp.Entity.pdb
